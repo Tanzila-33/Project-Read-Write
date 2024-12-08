@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Read & Write</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Read & Write Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/rrr.png.webp" alt="Read & Write Logo"></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
-                </ul>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Read<span>&</span>Write</h1>
             </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-    </section>
+        <div class="header-content">
+            <h2>Contact Us</h2>
+            <p>Have any questions? Feel free to reach out to us. We're here to help!</p>
+        </div>
+    </header>
 
-    <!-- Contact Form Section -->
-    <section class="main-content">
-        <h1>Contact Us</h1>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
+    <section class="contact-form">
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Read & Write. All rights reserved.</p>
+        <p>&copy; 2024 Read & Write Blog</p>
     </footer>
 </body>
 </html>
