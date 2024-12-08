@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Read & Write Blog</title>
+    <title>Contact Us | Read & Write Blog</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,10 +20,22 @@
             </ul>
         </nav>
         <div class="header-content">
-            <h2>About Us</h2>
-            <p>We are a community dedicated to the love of reading and writing. Our goal is to share knowledge, insights, and experiences to inspire people to embrace the written word.</p>
+            <h2>Contact Us</h2>
+            <p>Have any questions? Feel free to reach out to us. We're here to help!</p>
         </div>
     </header>
+
+    <section class="contact-form">
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
         <p>&copy; 2024 Read & Write Blog</p>
