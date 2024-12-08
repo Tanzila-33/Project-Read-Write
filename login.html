@@ -3,39 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Read & Write</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login | Read & Write Blog</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="images/rrr.png.webp" alt="Read & Write Logo"></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
-                </ul>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Read<span>&</span>Write</h1>
             </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
         </nav>
-    </section>
+        <div class="header-content">
+            <h2>Login to Your Account</h2>
+            <p>Access your account to manage your posts, comments, and more.</p>
+        </div>
+    </header>
 
-    <!-- Login Form Section -->
-    <section class="main-content">
-        <h1>Login</h1>
-        <form>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password" required>
+    <!-- Login Form -->
+    <section class="login-form">
+        <form action="dashboard.html" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
             <button type="submit">Login</button>
         </form>
+
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
     </section>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Read & Write. All rights reserved.</p>
+        <p>&copy; 2024 Read & Write Blog</p>
     </footer>
 </body>
 </html>
